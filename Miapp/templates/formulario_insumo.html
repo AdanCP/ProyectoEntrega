@@ -3,11 +3,11 @@
 {% load static %}
 
 {% block Contenido_cambiante %}
-    <form action = "{% url 'Formulario_insumo'%}" method ="POST"> {%csrf_token%}
+    <form action = "{% url 'Formulario_insumo'%}" method ="POST"> {% csrf_token %}
        
         {{ mi_formulario.as_p }}
 
-        <input type="submite" value = "Agregar"/>
+        <input type="submit" value = "Agregar"/>
     </form>
 
 
