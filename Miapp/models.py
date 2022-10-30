@@ -1,7 +1,8 @@
+from multiprocessing.sharedctypes import Value
 from django.db import models
 
 class Celulares (models.Model):
-    marca_celular= models.CharField (max_length=50, default = 0),
+    marca_celular= models.CharField (max_length=50)
     modelo_celular= models.CharField (max_length=50)
     stock_celular= models.IntegerField ()
 

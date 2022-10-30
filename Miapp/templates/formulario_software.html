@@ -1,0 +1,14 @@
+{% extends 'padre.html' %}
+
+{% load static %}
+
+{% block Contenido_cambiante %}
+    <form action = "{% url 'Formulario_software'%}" method ="POST"> {% csrf_token %}
+       
+        {{ mi_formulario.as_p }}
+
+        <input type="submit" value = "Agregar"/>
+    </form>
+
+
+{%endblock%}
