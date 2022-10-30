@@ -8,6 +8,7 @@ urlpatterns = [
     path ("lista_hardware/", hardware,name='Hardware'),
     path ("lista_insumos/", insumos,name='Insumos'),
     path ("lista_software/", software,name='Software'),
+    path ("lista_celulares/", celulares, name= "Celulares"),
     path ("formulario_insumo/", formulario_insumo, name='Formulario_insumo'),
     path ("formulario_software/", formulario_software, name='Formulario_software'),
     path ("formulario_hardware/", formulario_hardware, name='Formulario_hardware'),
